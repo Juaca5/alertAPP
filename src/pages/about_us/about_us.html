@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="danger" >
+      <ion-title>Nosotros</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+    
+     <ion-card>
+         <img src="../../assets/img/alerta_logo_horz.png">
+    
+          <ion-card-content>
+              <p>
+                  El Proyecto es coordinado por la Comisión Interuniversitaria de Prevención de VIH/SIDA, constituida por profesionales del área social y de la salud que pertenecen a las cuatro universidades tradicionales de la Región de Valparaíso (PUCV, USM, UV y UPLA), las que en conjunto buscan fomentar en los estudiantes universitarios tomar conciencia sobre la responsabilidad de la prevención del VIH/SIDA y otras ITS haciendo énfasis en el autocuidado respecto de la propia sexualidad.
+              </p>
+         </ion-card-content>
+    </ion-card>
+    
+    <ion-card *ngFor="let encargado of encargados">
+        <ion-card-content>
+            <ion-card-title>
+                    {{encargado.universidad}}
+            </ion-card-title>
+                <p>{{encargado.nombre}}</p>
+                <p>{{encargado.cargo}}</p>
+                <p>{{encargado.mail}}</p>
+                <p>{{encargado.telefono}}</p>
+        </ion-card-content>
+    </ion-card>
+    
+</ion-content>
+
+<ion-footer>
+    <ion-navbar color="danger" >
+    </ion-navbar>
+</ion-footer>

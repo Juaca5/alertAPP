@@ -1,13 +1,30 @@
 import { Component, ViewChild } from '@angular/core';
-
-import { Platform, MenuController, Nav } from 'ionic-angular';
-
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
-
+import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+// Home
+import { HomePage } from '../pages/home/home';
+
+// Home -->
+import { ProgramPage } from '../pages/program/program';
+import { SamplingPage } from '../pages/sampling/sampling';
+import { QuestionPage } from '../pages/questions/questions';
+
+// Home --> ProgramPage
+import { AboutUsPage } from '../pages/about_us/about_us';
+import { InformationPage } from '../pages/information/information';
+
+// Home --> SamplingPage
+import { CalendarPage } from '../pages/calendar/calendar';
+import { PlacesPage } from '../pages/places/places';
+
+// Home --> FrequenQuestionPage
+import { FrequenQuestionPage } from '../pages/frequen_questions/frequen_questions';
+import { RequestPage } from '../pages/resquest/resquest';
+
+// Home --> others
+import { ListPage } from '../pages/list/list';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,22 +32,26 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  // make HelloIonicPage the root (or first) page
-  rootPage = HelloIonicPage;
+  rootPage: any = HomePage;
+
   pages: Array<{title: string, component: any}>;
 
-  constructor(
-    public platform: Platform,
-    public menu: MenuController,
-    public statusBar: StatusBar,
-    public splashScreen: SplashScreen
-  ) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
-    // set our app's pages
+    // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+        { title: 'Home', component: HomePage },
+        { title: 'Program', component: ProgramPage },
+        { title: 'Sampling', component: SamplingPage },
+        { title: 'Questions', component: QuestionPage },
+        { title: 'AboutUs', component: AboutUsPage  },
+        { title: 'Information', component: InformationPage },
+        { title: 'Calendar', component: CalendarPage },
+        { title: 'Places', component: PlacesPage },
+        { title: 'FrequenQuestions', component: FrequenQuestionPage },
+        { title: 'Request', component: RequestPage },
+        { title: 'List', component: ListPage }
     ];
   }
 
@@ -44,9 +65,8 @@ export class MyApp {
   }
 
   openPage(page) {
-    // close the menu when clicking a link from the menu
-    this.menu.close();
-    // navigate to the new page if it is not the current page
+    // Reset the content nav to have just this page
+    // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
 }
