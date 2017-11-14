@@ -1,29 +1,37 @@
 <ion-header>
   <ion-navbar color="danger" >
-      <ion-title>Programa Alerta</ion-title>
+          <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+      <ion-title>Preguntas Frecuentes</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding >
-    
-    
-    frequen_questionsfrequen_questionsfrequen_questionsfrequen_questionsfrequen_questions
-    
-    
-    frequen_questions
-    frequen_questions
-    frequen_questions
-    
-    <img src="../../assets/img/alerta_logo_horz.png">
-    
-    <div text-center text-uppercase >
-      text-center
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-    </div>
-
-    <button ion-button color="danger" full menuToggle>Nosotros</button>
-    <button ion-button color="danger" full menuToggle>Informaciones</button>
-    
+    <ion-card *ngFor="let pregunta of preguntas">
+        <ion-card-content>
+            <ion-card-title >
+                <h2>
+                    <h1 style="color: rgb(255, 10, 10);">
+                    {{pregunta.titulo}}
+                    </h1>
+                </h2>
+            </ion-card-title>
+                <p text-justify>{{pregunta.respuesta}}</p>
+        </ion-card-content>
+        <ion-row>
+            <ion-col text-left>
+                <ion-note>
+                    {{pregunta.fecha}}
+                </ion-note>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-fab right bottom>
+        <button ion-fab color="danger">
+            <ion-icon name="mail"></ion-icon>
+        </button>
+    </ion-fab>
 </ion-content>
 
 <ion-footer>

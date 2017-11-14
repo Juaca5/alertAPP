@@ -1,29 +1,35 @@
 <ion-header>
   <ion-navbar color="danger" >
-      <ion-title>Programa Alerta</ion-title>
+      <ion-title>Fechas Tomas de Muestras </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding >
     
-    
-    
-    <img src="../../assets/img/alerta_logo_horz.png">
-    calendar
-    calendar
-    calendar
-    
-    
+    <!--
+    <ion-calendar #calendar></ion-calendar>
+
     <div text-center text-uppercase >
       text-center
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
     </div>
-
-    <button ion-button color="danger" full menuToggle>Nosotros</button>
-    <button ion-button color="danger" full menuToggle>Informaciones</button>
-    
+    -->
+    <ion-card *ngFor="let muestra of muestras">
+        <ion-item>
+            <h2 style="color: rgb(255, 10, 10);">{{muestra.universidad}}</h2>
+            <p>{{muestra.direccion}}</p>
+        </ion-item>
+        <ion-item>
+            <h2>{{muestra.fecha}}</h2>
+            <button ion-button icon-left clear item-end>
+                <ion-icon name="globe"></ion-icon>
+                    Ver Mapa
+                </button>
+        </ion-item>
+    </ion-card>
 
 </ion-content>
+
 
 <ion-footer>
     <ion-navbar color="danger" >
