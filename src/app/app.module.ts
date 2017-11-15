@@ -24,7 +24,7 @@ import { PlacesPage } from '../pages/places/places';
 
 // Home --> FrequenQuestionPage
 import { FrequenQuestionPage } from '../pages/frequen_questions/frequen_questions';
-import { RequestPage } from '../pages/resquest/resquest';
+import { AskPage } from '../pages/ask/ask';
 
 // Home --> others
 import { ListPage } from '../pages/list/list';
@@ -44,7 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       CalendarPage,
       PlacesPage,
       FrequenQuestionPage,
-      RequestPage,
+      AskPage,
       ListPage 
   ],
   imports: [
@@ -64,7 +64,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       CalendarPage,
       PlacesPage,
       FrequenQuestionPage,
-      RequestPage,
+      AskPage,
       ListPage
   ],
   providers: [

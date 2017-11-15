@@ -21,7 +21,7 @@ import { PlacesPage } from '../pages/places/places';
 
 // Home --> FrequenQuestionPage
 import { FrequenQuestionPage } from '../pages/frequen_questions/frequen_questions';
-import { RequestPage } from '../pages/resquest/resquest';
+import { AskPage } from '../pages/ask/ask';
 
 // Home --> others
 import { ListPage } from '../pages/list/list';
@@ -50,7 +50,7 @@ export class MyApp {
         { title: 'Calendar', component: CalendarPage },
         { title: 'Places', component: PlacesPage },
         { title: 'FrequenQuestions', component: FrequenQuestionPage },
-        { title: 'Request', component: RequestPage },
+        { title: 'Ask', component: AskPage },
         { title: 'List', component: ListPage }
     ];
   }

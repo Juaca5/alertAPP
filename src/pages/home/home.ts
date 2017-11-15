@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { ProgramPage } from '../program/program';
-import { QuestionPage } from '../questions/questions';
 import { SamplingPage } from '../sampling/sampling';
 import { FrequenQuestionPage } from '../frequen_questions/frequen_questions';
 

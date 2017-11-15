@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar color="danger" >
-      <ion-title>Nosotros</ion-title>
+      <ion-title text-justify >Nosotros</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -25,7 +25,9 @@
     <ion-card *ngFor="let encargado of encargados">
         <ion-card-content>
             <ion-card-title>
+                <h1>
                     {{encargado.universidad}}
+                </h1>
             </ion-card-title>
                 <p>{{encargado.nombre}}</p>
                 <p>{{encargado.cargo}}</p>

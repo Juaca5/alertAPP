@@ -18,18 +18,20 @@ export class ServiceProvider {
   }
 
 	  getDataEncargado(){
-		  return this.http.get(this.api+'encargado.php').map(res=>res.json())
+			return this.http.get(
+				this.api+'encargado.php').map(res=>res.json())
 	  }
 	  getDataPreguntasFrecuentes(){
-		  return this.http.get(this.api+'preguntasfrecuentes.php').map(res=>res.json())
+				return this.http.get(
+					this.api+'preguntasfrecuentes.php').map(res=>res.json())
 	  }
-	  getDataPreguntasFechas(){
-		return this.http.get(this.api+'tomademuestras.php').map(res=>res.json())
-	}
-	  dataRegister(parans)
-	  {
+	  getDataFechas(){
+				return this.http.get(
+					this.api+'tomademuestra.php').map(res=>res.json())
+	  }
+	  dataRequire(parans){
 	  		let headers = new Headers ({'Content-Type':'application/x-www-form-urlencoded'});
-	  		return this.http.post(this.api + "mail.php",parans,
+	  		return this.http.post("http://www.programaalerta.cl/alerta-app/prueba/correo/correo.php",parans,
 							  	{
 							  		headers: headers,
 							  		method:"POST"

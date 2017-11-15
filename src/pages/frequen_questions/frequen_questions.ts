@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ServiceProvider } from '../../providers/service-provider';
+import { AskPage } from '../ask/ask';
 
 @Component({
   selector: 'page-frequen_questions',
@@ -23,5 +24,8 @@ export class FrequenQuestionPage {
            data=> this.preguntas = data,
            err=> console.log(err)
          );
+    }
+    onClickAsk(){
+      this.navCtrl.push(AskPage);
     }
   }

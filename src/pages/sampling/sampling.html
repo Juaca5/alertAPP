@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar color="danger" >
-      <ion-title>Programa Alerta</ion-title>
+      <ion-title>Toma de Muestras</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -12,8 +12,8 @@
     <img src="">
 
 
-    <button ion-button color="danger" full menuToggle>Calendario de Toma de muestra</button>
-    <button ion-button color="danger" full menuToggle>Logares de retiro de resultados</button>
+    <button ion-button color="danger" full (click)="onClickCalendar()">Calendario de Toma de muestra</button>
+    <button ion-button color="danger" full (click)="onClickPlaces()">Logares de retiro de resultados</button>
 
 </ion-content>
 
