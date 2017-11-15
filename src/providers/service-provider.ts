@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ServiceProvider {
 
-	api:string = 'http://palerta.esy.es/provider.alerta.api/appalerta-api/'	
+	api:string = 'http://programaalerta.cl/alerta-app/provider.alerta.api/appalerta-api/'	
 
   constructor(public http: Http) {
   }
@@ -23,6 +23,9 @@ export class ServiceProvider {
 	  getDataPreguntasFrecuentes(){
 		  return this.http.get(this.api+'preguntasfrecuentes.php').map(res=>res.json())
 	  }
+	  getDataPreguntasFechas(){
+		return this.http.get(this.api+'tomademuestras.php').map(res=>res.json())
+	}
 	  dataRegister(parans)
 	  {
 	  		let headers = new Headers ({'Content-Type':'application/x-www-form-urlencoded'});

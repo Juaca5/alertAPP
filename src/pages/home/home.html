@@ -8,10 +8,19 @@
     <img src="../../assets/img/logo_cruv.png">
     
     <img src="../../assets/img/alerta_home.png">
-
+    <!-- Toma de muestras - Calendario - Retiro -->
+    <button ion-button color="danger" full (click)="onClickSampling()">Toma de Muetras</button> 
+    <!-- Programa Alertas - Equipo - Comision -->   
     <button ion-button color="danger" full (click)="onClickProgram()">Programa Alerta</button>
-    <button ion-button color="danger" full (click)="onClickSampling()">Toma de Muetras</button>
+    <!-- Informaciones -->
+    <button ion-button color="danger" full (click)="onClickInfo()">Informaciones</button>
+    <!-- Preguntas Frecuentes - CargarPreguntas() - Solicitud de informacion -->    
     <button ion-button color="danger" full (click)="onClickQuestion()">Preguntas Frecuentes</button>
 
+    <ion-fab right bottom>
+      <button ion-fab color="blue">
+          <ion-icon name="logo-facebook"></ion-icon>
+      </button>
+  </ion-fab>
     
 </ion-content>

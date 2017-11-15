@@ -20,7 +20,7 @@ export class ProgramPage {
     this.navCtrl.push(AboutUsPage);
   }
   
-  onClickInformation(){
+  onClickTeam(){
     this.navCtrl.push(InformationPage);
   }
 

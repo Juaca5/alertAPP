@@ -1,8 +1,8 @@
 {
-  "name": "myApp",
+  "name": "alertAPP",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Programa Alerta CRUV",
+  "homepage": "http://www.programaalerta.cl/web/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "2.1.3",
-    "ionic": "3.12.0",
+    "ionic": "3.18.0",
     "typescript": "2.3.4"
   },
   "description": "An Ionic project"
