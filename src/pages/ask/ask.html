@@ -34,16 +34,12 @@
           </ion-item>
         <ion-item>
             <ion-label floating >Mensaje </ion-label>
-            <ion-input type= "text" name= "mensaje" ngModel #mensaje = "ngModel" > </ion-input>
+            <ion-textarea type= "text" name= "mensaje" ngModel #mensaje = "ngModel" > </ion-textarea>
           </ion-item>
       </ion-list>
     </form>
 
-    <button ion-button full block color = "danger"> Enviar</button>
+    <button ion-button full block ng-click="envioDato( req)" color = "danger"> Enviar</button>
 
   </ion-content>
 
-<ion-footer>
-    <ion-navbar color="danger" >
-    </ion-navbar>
-</ion-footer>

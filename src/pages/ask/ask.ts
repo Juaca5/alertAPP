@@ -20,29 +20,26 @@ export class AskPage {
     public navCtrl: NavController, 
     public NavParams:NavParams, 
     public service: ServiceProvider, 
-    public alertCtrl: AlertController) {}
- 
-	  envioDato( req)
-	  {
-	  		this.service.dataRequire(req.value)
-	  		.subscribe(
-	  			 data=> {
-	  			 		this.showAlert(data.mensaje);
-	  			 		this.navCtrl.setRoot(HomePage);
-	  			 		console.log(data.mensaje)
-	  			 },
-	  			 err=>console.log(err)
-	  		);
-	  }
- 
-	  showAlert(men)
-	  {	
-	  		let alert = this.alertCtrl.create({
-	  				title: 'Informacion',
-	  				subTitle: men,
-	  				buttons :['OK']
-	  		});
-	  		alert.present();	
+	public alertCtrl: AlertController) {}
+	
+	envioDato( req){
+		this.service.dataRequire(req.value)
+	  	.subscribe(
+	  		data=> {
+				console.log(data.mensaje);
+	  		 	this.showAlert(data.mensaje);
+	  		 	this.navCtrl.setRoot(HomePage) 		
+	  		},
+	  		err=>console.log(err)
+	  	);
+	}
+	showAlert(men){	
+		let alert = this.alertCtrl.create({
+  			title: 'Mensaje enviado',
+  			subTitle: men,
+  			buttons :['OK']
+	  	});
+  		alert.present();	
 	  }
  
 }
