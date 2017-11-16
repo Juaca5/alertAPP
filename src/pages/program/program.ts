@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 
 // Home --> ProgramPage
 import { AboutUsPage } from '../about_us/about_us';
-import { InformationPage } from '../information/information';
+import { TeamPage } from '../team/team';
 
 
 @Component({
@@ -21,7 +21,7 @@ export class ProgramPage {
   }
   
   onClickTeam(){
-    this.navCtrl.push(InformationPage);
+    this.navCtrl.push(TeamPage);
   }
 
 }

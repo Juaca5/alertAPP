@@ -9,11 +9,12 @@ import { HomePage } from '../pages/home/home';
 // Home -->
 import { ProgramPage } from '../pages/program/program';
 import { SamplingPage } from '../pages/sampling/sampling';
+import { InformationPage } from '../pages/information/information';
 import { QuestionPage } from '../pages/questions/questions';
 
 // Home --> ProgramPage
 import { AboutUsPage } from '../pages/about_us/about_us';
-import { InformationPage } from '../pages/information/information';
+import { TeamPage } from '../pages/team/team';
 
 // Home --> SamplingPage
 import { CalendarPage } from '../pages/calendar/calendar';
@@ -51,6 +52,7 @@ export class MyApp {
         { title: 'Places', component: PlacesPage },
         { title: 'FrequenQuestions', component: FrequenQuestionPage },
         { title: 'Ask', component: AskPage },
+        { title: 'Team', component: TeamPage },
         { title: 'List', component: ListPage }
     ];
   }

@@ -17,6 +17,7 @@ import { QuestionPage } from '../pages/questions/questions';
 // Home --> ProgramPage
 import { AboutUsPage } from '../pages/about_us/about_us';
 import { InformationPage } from '../pages/information/information';
+import { TeamPage } from '../pages/team/team';
 
 // Home --> SamplingPage
 import { CalendarPage } from '../pages/calendar/calendar';
@@ -45,6 +46,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       PlacesPage,
       FrequenQuestionPage,
       AskPage,
+      TeamPage,
       ListPage 
   ],
   imports: [
@@ -65,6 +67,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       PlacesPage,
       FrequenQuestionPage,
       AskPage,
+      TeamPage,
       ListPage
   ],
   providers: [

@@ -29,6 +29,10 @@ export class ServiceProvider {
 				return this.http.get(
 					this.api+'tomademuestra.php').map(res=>res.json())
 	  }
+	  getDataUniversidad(){
+		return this.http.get(
+			this.api+'universidad.php').map(res=>res.json())
+	  }
 	  dataRequire(parans){
 	  		let headers = new Headers ({'Content-Type':'application/x-www-form-urlencoded'});
 	  		return this.http.post("http://www.programaalerta.cl/alerta-app/prueba/correo/correo.php",parans,
