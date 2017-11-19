@@ -15,13 +15,15 @@
     </div>
     -->
     <ion-card *ngFor="let muestra of muestras">
-        <ion-item>
+        <ion-card-content>
+        <ion-card-title>
             <h2 style="color: rgb(255, 10, 10);">{{muestra.universidad}}</h2>
             <p>{{muestra.direccion}}</p>
-        </ion-item>
+        </ion-card-title>
         <ion-item style="text-align:end">
             <h2>{{muestra.fecha | date : 'dd-MM-yyyy'}}</h2>
         </ion-item>
+        </ion-card-content>
     </ion-card>
 
 </ion-content>
