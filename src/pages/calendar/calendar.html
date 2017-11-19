@@ -19,12 +19,8 @@
             <h2 style="color: rgb(255, 10, 10);">{{muestra.universidad}}</h2>
             <p>{{muestra.direccion}}</p>
         </ion-item>
-        <ion-item>
-            <h2>{{muestra.fecha}}</h2>
-            <button ion-button icon-left clear item-end>
-                <ion-icon name="globe"></ion-icon>
-                    Ver Mapa
-                </button>
+        <ion-item style="text-align:end">
+            <h2>{{muestra.fecha | date : 'dd-MM-yyyy'}}</h2>
         </ion-item>
     </ion-card>
 
