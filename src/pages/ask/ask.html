@@ -13,34 +13,25 @@
   </ion-navbar>
 </ion-header>
 
-  <ion-content padding>
-    <form #f="ngForm" (ngSubmit)="envioDato(f)" >
-			<ion-list>
-        <ion-item>
-          <ion-label floating >Nombre </ion-label>
-          <ion-input type= "text" name= "nombre" ngModel #nombre = "ngModel" > </ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating >Apellido </ion-label>
-            <ion-input type= "text" name= "apellido" ngModel #apellido = "ngModel" > </ion-input>
-          </ion-item>
-        <ion-item>
-          <ion-label floating >Correo</ion-label>
-          <ion-input type= "text" name= "correo" ngModel #correo = "ngModel" > </ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating >Asunto</ion-label>
-            <ion-input type= "text" name= "asunto" ngModel #asunto = "ngModel" > </ion-input>
-          </ion-item>
-        <ion-item>
-            <ion-label floating >Mensaje </ion-label>
-            <ion-textarea type= "text" name= "mensaje" ngModel #mensaje = "ngModel" > </ion-textarea>
-          </ion-item>
-      </ion-list>
-    </form>
-
-    <button ion-button full block ng-click="envioDato( req)" color = "danger"> Enviar</button>
-    <button ion-button block (click)="submit()">Submit to server</button>
-
-  </ion-content>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-input type="text" name="username" [(ngModel)]="data.username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Correo</ion-label>
+      <ion-input type="text" name="useremail" [(ngModel)]="data.useremail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Asunto</ion-label>
+      <ion-input type="text" name="usersubject" [(ngModel)]="data.usersubject"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mensaje</ion-label>
+      <ion-textarea type="text" name="usermessage" [(ngModel)]="data.usermessage"></ion-textarea>
+    </ion-item>
+    <button ion-button color="danger" block (click)="submit()">Enviar mensaje</button>
+  </ion-list>
+</ion-content>
 
