@@ -29,13 +29,18 @@ export class ServiceProvider {
 				return this.http.get(
 					this.api+'tomademuestra.php').map(res=>res.json())
 	  }
+	  /*
+	  getDataImage(){
+	  http://programaalerta.cl/alerta-app/web/uploads/
+	  }
+	  */
 	  getDataUniversidad(){
 		return this.http.get(
 			this.api+'universidad.php').map(res=>res.json())
 	  }
 	  dataRequire(parans){
 	  		let headers = new Headers ({'Content-Type':'application/x-www-form-urlencoded'});
-	  		return this.http.post("http://www.programaalerta.cl/alerta-app/prueba/correo/correo.php",parans,
+	  		return this.http.post("http://programaalerta.cl/alerta-app/provider.alerta.api/prueba/correo.php",parans,
 							  	{
 							  		headers: headers,
 							  		method:"POST"
