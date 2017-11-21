@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.alertAPP.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>alertAPP</name>
     <description>Aplicacion movil para el programa alerta del consejo de rectores de las universidades de Valparasio</description>
     <author email="jey.sud@gmail.com" href="http://programaalerta.cl">Programa Alerta CRUV</author>
