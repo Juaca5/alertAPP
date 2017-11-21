@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, AlertController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 import { Http } from '@angular/http';
-import { ServiceProvider } from '../../providers/service-provider';
 import { HomePage } from '../home/home';
 
 

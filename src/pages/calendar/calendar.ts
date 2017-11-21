@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { DatePipe } from '@angular/common';
 import { ServiceProvider } from '../../providers/service-provider';
 
 @Component({

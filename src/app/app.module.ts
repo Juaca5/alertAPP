@@ -12,7 +12,6 @@ import { HomePage } from '../pages/home/home';
 // Home -->
 import { ProgramPage } from '../pages/program/program';
 import { SamplingPage } from '../pages/sampling/sampling';
-import { QuestionPage } from '../pages/questions/questions';
 
 // Home --> ProgramPage
 import { AboutUsPage } from '../pages/about_us/about_us';
@@ -27,8 +26,6 @@ import { PlacesPage } from '../pages/places/places';
 import { FrequenQuestionPage } from '../pages/frequen_questions/frequen_questions';
 import { AskPage } from '../pages/ask/ask';
 
-// Home --> others
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -39,15 +36,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       HomePage,
       ProgramPage,
       SamplingPage,
-      QuestionPage,
       AboutUsPage ,
       InformationPage,
       CalendarPage,
       PlacesPage,
       FrequenQuestionPage,
       AskPage,
-      TeamPage,
-      ListPage 
+      TeamPage
   ],
   imports: [
     BrowserModule,
@@ -60,15 +55,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       HomePage,
       ProgramPage,
       SamplingPage,
-      QuestionPage,
       AboutUsPage ,
       InformationPage,
       CalendarPage,
       PlacesPage,
       FrequenQuestionPage,
       AskPage,
-      TeamPage,
-      ListPage
+      TeamPage
   ],
   providers: [
     ServiceProvider,

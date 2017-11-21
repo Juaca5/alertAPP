@@ -10,7 +10,6 @@ import { HomePage } from '../pages/home/home';
 import { ProgramPage } from '../pages/program/program';
 import { SamplingPage } from '../pages/sampling/sampling';
 import { InformationPage } from '../pages/information/information';
-import { QuestionPage } from '../pages/questions/questions';
 
 // Home --> ProgramPage
 import { AboutUsPage } from '../pages/about_us/about_us';
@@ -24,8 +23,7 @@ import { PlacesPage } from '../pages/places/places';
 import { FrequenQuestionPage } from '../pages/frequen_questions/frequen_questions';
 import { AskPage } from '../pages/ask/ask';
 
-// Home --> others
-import { ListPage } from '../pages/list/list';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -45,15 +43,13 @@ export class MyApp {
         { title: 'Home', component: HomePage },
         { title: 'Program', component: ProgramPage },
         { title: 'Sampling', component: SamplingPage },
-        { title: 'Questions', component: QuestionPage },
         { title: 'AboutUs', component: AboutUsPage  },
         { title: 'Information', component: InformationPage },
         { title: 'Calendar', component: CalendarPage },
         { title: 'Places', component: PlacesPage },
         { title: 'FrequenQuestions', component: FrequenQuestionPage },
         { title: 'Ask', component: AskPage },
-        { title: 'Team', component: TeamPage },
-        { title: 'List', component: ListPage }
+        { title: 'Team', component: TeamPage }
     ];
   }
 
