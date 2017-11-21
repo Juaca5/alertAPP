@@ -1,6 +1,6 @@
 {
   "name": "alertAPP",
-  "app_id": "c45a5b9a",
+  "app_id": "45a20ecc",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

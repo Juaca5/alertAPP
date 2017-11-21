@@ -29,11 +29,11 @@ export class ServiceProvider {
 				return this.http.get(
 					this.api+'tomademuestra.php').map(res=>res.json())
 	  }
-	  /*
+	  
 	  getDataImage(){
-	  http://programaalerta.cl/alerta-app/web/uploads/
+		return this.http.get(
+			this.api+'infografia.php').map(res=>res.json())
 	  }
-	  */
 	  getDataUniversidad(){
 		return this.http.get(
 			this.api+'universidad.php').map(res=>res.json())
