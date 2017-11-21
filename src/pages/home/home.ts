@@ -14,6 +14,7 @@ import { InformationPage } from '../information/information';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
+    
   }
   onClickSampling(){
     this.navCtrl.push(SamplingPage);
