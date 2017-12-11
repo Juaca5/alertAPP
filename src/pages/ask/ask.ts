@@ -49,7 +49,7 @@ export class AskPage {
 		});
 		let alert = this.alertCtrl.create({
 			title: 'Mensaje enviado',
-			subTitle: 'Tu mensaje a sido enviado, pronto te contactaremos',
+			subTitle: 'Tu mensaje ha sido enviado, pronto te contactaremos',
 			buttons: ['Aceptar']
 		});
 		alert.present();

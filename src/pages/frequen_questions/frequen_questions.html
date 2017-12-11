@@ -8,6 +8,11 @@
 </ion-header>
 
 <ion-content padding >
+    <ion-fab right bottom>
+        <button ion-fab color="danger" full (click)="onClickAsk()">
+            <ion-icon name="mail"></ion-icon>
+        </button>
+    </ion-fab>
     <ion-card *ngFor="let pregunta of preguntas">
         <ion-card-content>
             <ion-card-title >
@@ -27,11 +32,5 @@
             </ion-col>
         </ion-row>
     </ion-card>
-
-    <ion-fab right bottom>
-        <button ion-fab color="danger" full (click)="onClickAsk()">
-            <ion-icon name="mail"></ion-icon>
-        </button>
-    </ion-fab>
 
 </ion-content>
